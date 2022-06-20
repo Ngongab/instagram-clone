@@ -41,6 +41,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Container(
           padding: const EdgeInsets.symmetric(
@@ -87,7 +88,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ],
                 ),
                 const SizedBox(
-                  height: 64.0,
+                  height: 50.0,
                 ),
                 TextFieldInput(
                   textEditingController: _usernameController,
